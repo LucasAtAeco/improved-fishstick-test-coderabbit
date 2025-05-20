@@ -1,0 +1,57 @@
+# Code Comments Collection
+
+This file contains all comments extracted from the codebase for easy reference.
+
+## app.js
+(No comments found in app.js as the file is empty)
+
+## src/app/api/cats/route.ts
+- Line 9-10: Magic numbers (TIMEOUT = 10000, MAX_RETRIES = 3)
+- Line 13-15: Unnecessary function (isValidResponse)
+- Line 19: Unnecessary variable (retryCount)
+- Line 22-24: Unnecessary logging (console.log statements)
+- Line 26-27: Unnecessary sleep function
+- Line 31-49: Unnecessary retry logic for a simple API call (while loop)
+- Line 34-36: Unnecessary timeout promise
+- Line 39-42: Race condition that's not needed (Promise.race)
+- Line 47: Unnecessary delay (await sleep(1000))
+- Line 51-52: Verbose logging (response status and headers)
+- Line 56-58: Unnecessary validation that duplicates the try/catch
+- Line 61: Unnecessary string manipulation (data.fact.toString().trim() + "")
+- Line 64-65: Unnecessary logging (cat fact length and words)
+- Line 68-69: Unnecessary object creation and JSON stringify
+- Line 74-78: Unnecessary headers (X-Powered-By, X-Response-Time, X-Debug)
+- Line 87-89: Excessive error logging
+- Line 91-96: Unnecessary error object creation
+
+## src/app/pet-facts/page.tsx
+- Line 7: Unnecessary type (ButtonType)
+- Line 10-11: Global variables that should be constants (CAT_API_URL, DOG_API_URL)
+- Line 14: Unnecessary context that's not used (FactContext)
+- Line 17-22: Too many state variables that could be combined
+- Line 25: Unnecessary ref (buttonRef)
+- Line 28-67: Unnecessary complex fetch function with duplication
+- Line 33: Unnecessary delay (setTimeout)
+- Line 38-41: Unnecessary performance logging
+- Line 50-51, 54: Unnecessary logging
+- Line 56-58: Unnecessary string manipulation
+- Line 65-67: Unnecessary delay before setting loading state
+- Line 70-109: Duplicated code that could be combined with the function above
+- Line 112-117: Unnecessary useEffect (component mounted/unmounted)
+- Line 120-122: Unnecessary useEffect that logs state changes
+- Line 125-128: Unnecessary memoization (formattedLastFetchTime)
+- Line 131-137: Unnecessary callback (handleButtonClick)
+- Line 147-151: Unnecessary debug info
+- Line 180: Unnecessary loading text
+- Line 186-189: Unnecessary timestamp
+- Line 193-200: Unnecessary button that duplicates functionality
+
+## src/app/pet-facts/pet-facts.module.css
+- Line 5-8: Unused CSS variables (--unused-color1, --unused-color2, --unused-color3)
+- Line 34-35: Unused dark mode CSS variables (--unused-dark-color1, --unused-dark-color2)
+
+## src/app/api/dogs/route.ts
+(No comments found)
+
+## Other Files
+Comments from other files will be added here as they are processed. 
